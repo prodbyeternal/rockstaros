@@ -12,9 +12,7 @@ It also makes it easier to integrate **multiple package managers** into Red Star
 
 ---
 
-## ⚠️ You must be root.
-
-> **Warning**  
+> [!WARNING]  
 > You must run the installer as **root**.  
 > Failure to do so will result in the installation not working as expected.  
 > In other words: *`rootsetting and su` is your friend.*
