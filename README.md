@@ -15,7 +15,7 @@ It also makes it easier to integrate **multiple package managers** into Red Star
 > [!WARNING]  
 > You must run the installer as **root**.  
 > Failure to do so will result in the installation not working as expected.  
-> In other words: *`rootsetting and su` is your friend.*
+> In other words: *`rootsetting and su` are your friends.*
 
 ---
 
