@@ -12,7 +12,7 @@ It also makes it easier to integrate **multiple package managers** into Red Star
 
 ---
 
-## ⚠️ You Must Be Root
+## ⚠️ You must be root.
 
 > **Warning**  
 > You must run the installer as **root**.  
