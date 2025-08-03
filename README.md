@@ -1,7 +1,7 @@
 # rockstaros
 RockStar OS - Tool for Red Star OS 3.0 ≪붉은별≫
 
-<img src=https://raw.githubusercontent.com/prodbyeternal/rockstaros/main/header.png></img>
+<img src=https://github.com/prodbyeternal/rockstaros/blob/main/header.png?raw=true></img>
 
 RockstarOS is a utility designed for an already **modified Red Star OS 3.0** — specifically one that has:
 - A swapped (custom) Linux kernel
