@@ -22,7 +22,9 @@ It also makes it easier to integrate **multiple package managers** into Red Star
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/rockstaros.git
+git clone https://github.com/prodbyeternal/rockstaros.git
 cd rockstaros
-sudo ./rockstar.sh
+sudo ./rockstar.sh```
+
+Or download the whole branch manually.
 
