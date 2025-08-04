@@ -125,6 +125,16 @@ chmod +x "$BEDROCK_SCRIPT"
 echo "[*] Running Bedrock hijack..."
 bash "$BEDROCK_SCRIPT" --hijack redstar
 
+# --- Customize Bedrock release branding ---
+echo "[*] Customizing release branding..."
+if [[ -d /bedrock/etc ]]; then
+    rm -f /bedrock/etc/bedrock-release
+    echo "Rockstar OS 1.0" > /bedrock/etc/bedrock-release
+    echo "[+] Release branding updated to 'Rockstar OS 1.0'."
+else
+    echo "[!] /bedrock/etc directory not found - skipping branding update."
+fi
+
 # --- Post-install sanity checks ---
 echo "[*] Performing sanity checks..."
 
