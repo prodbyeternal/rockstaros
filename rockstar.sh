@@ -113,6 +113,23 @@ nix profile install nixpkgs#bash
 nix profile install nixpkgs#wget
 nix profile install nixpkgs#curl
 
+# --- Set hostname to rockstar if default is localhost ---
+echo "[*] Checking system hostname..."
+NETWORK_FILE="/etc/sysconfig/network"
+
+if [[ -f "$NETWORK_FILE" ]]; then
+    if grep -q '^HOSTNAME=localhost' "$NETWORK_FILE"; then
+        sed -i 's/^HOSTNAME=localhost/HOSTNAME=rockstar/' "$NETWORK_FILE"
+        hostname rockstar
+        echo "[+] Hostname changed to 'rockstar'."
+    else
+        echo "[+] Hostname already customized - leaving as is."
+    fi
+else
+    echo "[!] $NETWORK_FILE not found — skipping hostname check."
+fi
+
+
 # --- Download Bedrock hijack ---
 echo "[*] Downloading Bedrock Linux hijack script..."
 BEDROCK_SCRIPT="bedrock-linux-0.7.30-x86_64.sh"
